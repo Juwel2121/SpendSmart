@@ -1,0 +1,58 @@
+
+SpendSmart: Personal Budget Organizer Features
+
+Current Features:
+1. Add Transactions:
+   - Users can add new transactions with details like the amount, description, date, and category.
+   - Each transaction is recorded in-memory using the FinanceService.
+
+2. View Total Spent:
+   - Users can view the total amount spent across all transactions.
+   - The total is calculated by summing up the transaction amounts.
+
+3. Simple Categorization:
+   - Each transaction is assigned to a category (currently hardcoded as "General" for simplicity).
+   - The Transaction model supports storing a category for each transaction.
+
+4. Basic Dashboard Interaction:
+   - Users interact with the system via a simple console-based dashboard, where they can:
+     - Choose to add transactions.
+     - View the total amount spent.
+
+Potential Features (If You Choose to Expand):
+1. MySQL Database Integration:
+   - Replace the in-memory storage of transactions with a persistent MySQL database.
+   - Store transactions, categories, and other user data in tables to retain data even after the app closes.
+
+2. Transaction Categorization by User:
+   - Allow users to choose or create specific categories (e.g., Food, Transportation, Utilities) for each transaction.
+   - View total spending per category.
+
+3. Set Budget for Categories:
+   - Allow users to define a budget for each category (e.g., limit how much they want to spend on food or utilities).
+   - Display warnings when the spending in a category exceeds the set budget.
+
+4. Income Management:
+   - Add functionality to record income, which could allow for a more complete financial overview (income vs. expenses).
+   - Track savings or deficits based on income and expenses.
+
+5. Data Persistence:
+   - Implement data persistence to save user transactions and budgets using MySQL.
+   - Load data back into the system when the application starts.
+
+6. User Authentication (if expanded to web):
+   - If you decide to extend this project to a web-based solution using ASP.NET, you could add user authentication.
+   - Different users can have their own personal budgets and transaction data.
+
+7. Expense Reports:
+   - Generate reports for users to track their spending over time (e.g., weekly, monthly).
+   - Export reports to formats like CSV or PDF.
+
+8. User Notifications:
+   - Notify users when they are approaching or have exceeded their budget limit for a category.
+
+Features You Can Highlight for Your CV:
+- Add and Manage Transactions: Basic financial management by adding expenses and tracking total spending.
+- Basic Dashboard: Simple user interface to interact with financial data via the console.
+- Categorization: Preliminary implementation of categorizing expenses.
+- MySQL (Planned/Future): Mention that you plan to integrate MySQL for data persistence if not yet implemented.
